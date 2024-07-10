@@ -13,6 +13,7 @@ class OffsetAnimation extends StatefulWidget {
   final bool? hideNavigationBar;
   final double? navBarHeight;
   final bool extendedLength;
+  // ignore: avoid_positional_boolean_parameters
   final Function(bool, bool)? onAnimationComplete;
 
   @override

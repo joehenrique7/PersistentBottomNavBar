@@ -23,6 +23,7 @@ class PersistentBottomNavBar extends StatelessWidget {
   final Widget? customNavBarWidget;
   final bool? confineToSafeArea;
   final bool? hideNavigationBar;
+  // ignore: avoid_positional_boolean_parameters
   final Function(bool, bool)? onAnimationComplete;
   final bool? isCustomWidget;
 
@@ -219,6 +220,7 @@ class PersistentBottomNavBar extends StatelessWidget {
           hideNavigationBar: hideNavigationBar ?? this.hideNavigationBar,
           customNavBarWidget: customNavBarWidget ?? this.customNavBarWidget,
           onAnimationComplete:
+              // ignore: avoid_positional_boolean_parameters
               onAnimationComplete as dynamic Function(bool, bool)? ??
                   this.onAnimationComplete,
           navBarEssentials: navBarEssentials ?? this.navBarEssentials,
